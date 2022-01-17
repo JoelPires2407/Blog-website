@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+    background-attachment: fixed;
+}
+
+/* Header*/
+
+header{
+    max-width:90%;
+    margin:auto;
+    margin-top:2%;
+    height:50px;
+    display:table;
+}
+
+#title
+{
+    display:table-cell;
+    vertical-align: middle;
+    padding:5px 30px;
+}
+
+#title img {
+    height: 50px;
+    width: 50px;
+}
+
+header .dropdown{
+    width:100%;
+    text-align:right;
+    display:table-cell;
+    vertical-align: middle;
+    font-family:'poppins';
+}
+
+header .dropdown .dropdown-content li{
+    display:inline-block;
+    margin:0 12px;
+}
+
+header .dropdown .dropdown-content li a{
+    color:black;
+    text-decoration:none;
+}
+
+header .dropdown .dropdown-content li a:hover{
+    border-bottom: 2px solid black;
+    transition: border-bottom .5s;
+    text-decoration:none;
+}
+
+hr
+{
+    max-width:90%;
+    height: 7px;
+    border: none;
+    outline: none;
+    margin:auto;
+    background-color: black;
+    border-radius:20px;
+}
+/* End Header */
+
+/* Blogs */
+
+#Blogs
+{
+    display:grid;
+    width:80%;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    grid-gap:4% 1%;
+}
+
+#Blog
+{
+    height:500px;
+    min-width:200px;
+    max-width:400px;
+    position: relative;
+    margin:auto;
+    background-color:#1C6DD0;
+    color:#FFF8F3;
+    font-family:"poppins";
+    border-radius: 20px;
+    text-align: center;
+    box-shadow:0px 4px 10px -2px rgba(0,0,0,1)
+}
+
+#Blog a
+{
+    display:block;
+    background-color:#FED1EF;
+    text-decoration: none;
+    font-family: "poppins";
+    border-radius:10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0),2px 5px 16px 0px #0B325E,-1px 3px 8px 5px #1F87FF;
+    width:88%;
+    position:absolute;
+    bottom:17px;
+    left:22.5px;
+    padding:12px 0px;
+    transition:background-color 1s;
+    transition: box-shadow 1s;
+}
+
+#Blog a:hover
+{
+    background-color:#A3E4DB;
+    color:white;
+    transition:background-color 1s;
+    transition: box-shadow 1s;
+    box-shadow: 5px 5px 12px 5px rgba(0,0,0,0),0px 10px 13px -7px #000000;
+}
+
+#Blog img
+{
+    object-fit:contain;
+    width:100%;
+    border-radius: 20px 20px 0 0;
+}
+
+#Blog p
+{
+    padding:5px 20px 5px 0;
+    font-size: 25px;
+}
+
+/* End Blogs */
+
+
+/* footer*/
+#footer
+{
+    text-align: center;
+}
+/* end footer*/
+
+#About
+{
+    height:500px;
+    width:750px;
+    text-align: center;
+    font-family: 'poppins';
+    margin:auto;
+    display: block;
+}
+
+#About h1
+{
+    font-weight: 400;
+    font-family: "poppins";
+    width:100%;
+    margin-top:50px;
+}
+
+#About h1::first-line{
+    font-weight:800;
+    width:50%;
+}
+
+#About img{
+    height:100%;
+    width:100%;
+    object-fit:scale-down;
+    border-radius: 20px;
+}
+
+#contact {
+    width:300px;
+    background-image: linear-gradient(to right bottom,#ec2F4B,#009FFF);
+    text-align: center;
+    border-radius: 10%;
+    margin: auto;
+}
+
+#contact img{
+    width:90px;
+    height:90px;
+    margin:50px 0px 50px 0px;
+}
+
+#contact #placeholder{
+    color:white;
+    text-align: left;
+    padding-left:70px;
+    font-family: "poppins";
+}
+
+#contact input{
+    outline:0;
+    border:0;
+    height: 40px;
+    border-radius: 20px;
+    padding-left:20px;
+}
+
+#contact #submit{
+    width:70%;
+    margin-bottom:50px;
+    text-align: center;
+    background-color: coral;
+    color:white;
+    opacity:.95;
+    box-shadow: 5px 5px 12px 5px rgba(0,0,0,0),0px 10px 13px -7px #000000;
+}
+
+#contact #submit:hover{
+    opacity:1;
+}
